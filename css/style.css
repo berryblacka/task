@@ -1,0 +1,143 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #d3cfb4;
+}
+
+.wrapper {
+  margin: 5vw auto;
+  width: 28vw;
+  height: 39vw;
+  /* border: 1px solid black; */
+  position: relative;
+}
+
+.black_circle {
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  top: 44%;
+  right: 7%;
+}
+
+.red_triangle {
+  position: absolute;
+  background-image: url(../img/red_triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 38vw;
+  width: 26vw;
+  top: 3%;
+  left: 3%;
+}
+
+.bolotny_rectangle {
+  position: absolute;
+  height: 15vw;
+  width: 7vw;
+  background-color: #7a7a58;
+  rotate: 333deg;
+  top: 19%;
+  left: 23%;
+}
+
+.green_rectangle_1 {
+  position: absolute;
+  height: 13vw;
+  width: 3vw;
+  background-color: #686256;
+  rotate: 53deg;
+  bottom: 8%;
+  right: 36%;
+  opacity: 0.8;
+}
+.yellow_rectangle {
+  position: absolute;
+  background-image: url(../img/yellow_rectangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 23vw;
+  width: 18vw;
+  bottom: 16%;
+  right: 3%;
+}
+
+.red_rectangle {
+  position: absolute;
+  height: 17vw;
+  width: 1vw;
+  background-color: #bd2624;
+  rotate: 53deg;
+  bottom: 0%;
+  right: 46%;
+  animation: color-change-red 2s infinite;
+}
+.green_rectangle_2 {
+  position: absolute;
+  height: 17vw;
+  width: 0.5vw;
+  background-color: #757855;
+  rotate: 47deg;
+  bottom: 0%;
+  left: 37%;
+  animation: color-change-green 2s infinite;
+}
+
+.gray_rectangle {
+  position: absolute;
+  height: 14vw;
+  width: 4vw;
+  background-color: #343933;
+  rotate: 336deg;
+  top: 6%;
+  left: 34%;
+  opacity: 0.8;
+}
+
+.red_circle {
+  position: absolute;
+  background-color: #c42027;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  top: 46%;
+  right: 31%;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes color-change-red {
+  0% {
+    background-color: #bd2624;
+  }
+  50% {
+    background-color: #757855;
+  }
+  100% {
+    background-color: #bd2624;
+  }
+}
+@keyframes color-change-green {
+  0% {
+    background-color: #757855;
+  }
+  50% {
+    background-color: #bd2624;
+  }
+  100% {
+    background-color: #757855;
+  }
+}
